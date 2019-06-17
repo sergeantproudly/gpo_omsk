@@ -550,6 +550,10 @@ header {
 			padding-top: 13px;
 			height: 43px;
 
+			@media (max-width: $adaptive-width-desktop-small) {
+				display: none;
+			}
+
 			& > .label {
 				cursor: pointer;
 
