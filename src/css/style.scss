@@ -6,6 +6,7 @@
 @import 'jquery.editable-select';
 @import 'jquery.jscrollpane';
 @import 'slick';
+@import 'visual';
 
 html.html-modal-long {
 	height: auto !important;
@@ -2979,7 +2980,7 @@ footer {
 
 					&.clipped {
 						overflow: hidden;
-						height: 190px;	
+						height: 210px;	
 						padding-top: 2px;					
 
 						&:after {

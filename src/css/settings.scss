@@ -90,6 +90,16 @@ $adaptive-width-mobile: 540px;
 	display: block;
     flex: 0 0 auto;
 }
+@mixin grayscale() {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url('../images/grayscale.svg');
+	filter: gray;
+	-webkit-filter: grayscale(1);
+}
 
 %padding-edges {
 	padding-left: $padding-edges;
