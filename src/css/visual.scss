@@ -991,10 +991,30 @@ body {
 		}
 
 		.form {
+			.fld-holder {
+				label {
+					color: #fff;
+				}
+			}
+
 			.btn-line {
 				.cb-line {
 					& > label {
 						color: #fff;
+					}
+				}
+
+				.attachments {
+					.files-list {
+						& > li {
+							.name {
+								color: #fff;
+							}
+
+							.remove {
+								color: #bbb;
+							}
+						}
 					}
 				}
 			}
@@ -1108,6 +1128,24 @@ body {
 				}
 			}
 		}
+
+		.ui-selectmenu-menu {
+			.ui-menu {
+				border-color: #fff;
+
+				li {
+					background-color: #000;
+					color: #fff;
+					border-color: #fff;
+
+					.ui-state-active {
+						&:after {
+							background-image: url('../images/ico_v_white2.svg');
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&.color-bg {
@@ -1118,7 +1156,22 @@ body {
 			color: #D7FF36;
 
 			.topline {
-				color: #D7FF36;		
+				color: #D7FF36;
+
+				#bl-account {
+					.notification {
+						color: #D7FF36;
+						background-color: #232323;
+
+						p {
+							color: #D7FF36;
+						}
+
+						&:after {
+							border-bottom-color: #232323;
+						}
+					}
+				}
 			}
 
 			a {
@@ -1383,10 +1436,30 @@ body {
 		}
 
 		.form {
+			.fld-holder {
+				label {
+					color: #D7FF36;
+				}
+			}
+
 			.btn-line {
 				.cb-line {
 					& > label {
 						color: #D7FF36;
+					}
+				}
+
+				.attachments {
+					.files-list {
+						& > li {
+							.name {
+								color: #D7FF36;											
+							}
+
+							.remove {
+								color: #D7FF36;											
+							}
+						}
 					}
 				}
 			}
@@ -1495,6 +1568,24 @@ body {
 				ul {
 					& > li {
 						background-color: #D7FF36;
+					}
+				}
+			}
+		}
+
+		.ui-selectmenu-menu {
+			.ui-menu {
+				border-color: #D7FF36;
+
+				li {
+					background-color: #000;
+					color: #D7FF36;
+					border-color: #D7FF36;
+
+					.ui-state-active {
+						&:after {
+							background-image: url('../images/ico_v_green.svg');
+						}
 					}
 				}
 			}
