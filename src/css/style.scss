@@ -3,6 +3,7 @@
 @import 'fonts';
 @import 'settings';
 @import 'jquery-ui';
+@import 'jquery-ui-timepicker-addon';
 @import 'jquery.editable-select';
 @import 'jquery.jscrollpane';
 @import 'slick';
@@ -191,7 +192,7 @@ input.date {
 		vertical-align: middle;
 		width: 17px;
 		height: 16px;
-		background-image: url('../../images/ico_calendar.svg');
+		background-image: url('../images/ico_calendar.svg');
 		margin: 0 0 0 -32px;
 		cursor: pointer;
 

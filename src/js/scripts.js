@@ -120,6 +120,36 @@ function initElements(element) {
 		});
 	});
 
+	$element.find('.js-datetime').each(function(index,input){
+		var datepicker_options = {
+			inline: true,
+			language: 'ru',
+		    changeYear: true,
+		    changeMonth: true,
+		    showOtherMonths: true,
+		    currentText: 'Текущее время',
+			closeText: 'Готово',
+		    timeText: 'Время',
+		    hourText: 'Часы',
+			minuteText: 'Минуты'
+		};
+		var minYear=$(input).attr('data-min-year');
+		if(minYear) datepicker_options.minDate='01.01.'+minYear;
+		else minYear='c-10';
+		var maxYear=$(input).attr('data-max-year');
+		if(maxYear) datepicker_options.maxDate='01.01.'+maxYear;
+		else maxYear='c+10';
+		var defaultDate=$(input).attr('data-default-date');
+		if(defaultDate) datepicker_options.defaultDate=defaultDate;
+		datepicker_options.yearRange=[minYear,maxYear].join(':');
+		
+		$(input).attr('type','text').datetimepicker(datepicker_options).addClass('date').val($(input).attr('value')).after('<i></i>');
+		$(input).next('i').click(function() {
+			$(this).prev('input').datepicker('show');
+			//initElements($('#ui-datepicker-div'));
+		});
+	});
+
 	$element.find('input[type="checkbox"], input[type="radio"]').checkboxradio();
 
 	$element.find('.file-upload').each(function(index, block) {
