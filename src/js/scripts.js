@@ -766,5 +766,11 @@ function _scrollTo(target, offset) {
 			});
 		});
 
+		// BROWSERS SUPPORT
+		$('#browsers-support').click(function(e) {
+			e.preventDefault();
+			showModal('modal-browsers-support');
+		});
+
 	})
 })(jQuery)
